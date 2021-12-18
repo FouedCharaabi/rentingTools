@@ -1,0 +1,19 @@
+<div class="form-structor">
+	<form>
+	<div class="signup">
+		<h2 class="form-title" id="Login">Login</h2>
+		<div class="form-holder">
+			<input [ngModel]="email" (ngModelChange)="log($event)" name="email" type="text" class="input" placeholder="Email" required/>
+			<input [ngModel]="password" (ngModelChange)="log1($event)" name="password" type="password" class="input" placeholder="Password" required/>
+		</div>
+		<button type="submit" class="submit-btn" (click)="postData()">Login</button>
+		<h5 id="forgot" (click)="forgot()">Forgot password?</h5><br>
+
+	</div>
+	<div class="login slide-up">
+		<div class="center">
+			<h2 routerLink="/users/signup" class="form-title" id="Signup">Sign up</h2>
+		</div>
+	</div>
+</form>
+</div>

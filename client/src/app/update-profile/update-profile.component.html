@@ -1,0 +1,62 @@
+<div class="page">
+  <label class="field field_v1">
+    <input
+      value="{{ user.fullname }}"
+      [(ngModel)]="user.fullname"
+      class="field__input"
+      placeholder="e.g. Stanislav"
+    />
+    <span class="field__label-wrap">
+      <span class="field__label">Full name</span>
+    </span>
+  </label>
+  <label class="field field_v2">
+    <input
+      value="{{ user.username }}"
+      [(ngModel)]="user.username"
+      class="field__input"
+      placeholder="e.g. Melnikov"
+    />
+    <span class="field__label-wrap">
+      <span class="field__label">User name</span>
+    </span>
+  </label>
+  <label class="field field_v3">
+    <input
+      value="{{ user.phone_number }}"
+      [(ngModel)]="user.phone_number"
+      class="field__input"
+      placeholder="e.g. melnik909@ya.ru"
+    />
+    <span class="field__label-wrap">
+      <span class="field__label">E-mail</span>
+    </span>
+  </label>
+  <label class="field field_v3">
+    <input
+      value="{{ user.email }}"
+      [(ngModel)]="user.email"
+      class="field__input"
+      placeholder="E-mail"
+    />
+    <span class="field__label-wrap">
+      <span class="field__label">Mobile</span>
+    </span>
+  </label>
+  <label class="field field_v3">
+    <input
+      value="{{ user.adrress }}"
+      [(ngModel)]="user.adrress"
+      class="field__input"
+      placeholder="Adrress"
+    />
+    <span class="field__label-wrap">
+      <span class="field__label">Adrress</span>
+    </span>
+  </label>
+  <div>
+    <button class="btn btn-info" (click)="updateMyprofile()">
+      <a routerLink="/user">Done</a>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+
+  <div class="form-structor">
+    <form>
+    <div class="signup">
+      <h2 class="form-title" id="signup"><span></span>Sign up</h2>
+      <div class="form-holder">
+        <input [(ngModel)]="username" name = "username"type="text" class="input" placeholder="username" required/>
+        <input [(ngModel)]="fullname" name = "fullname" type="text" class="input" placeholder="fullname" required/>
+        <input [(ngModel)]="email" name = "email" type="text"  class="input" placeholder="email" required />
+        <input [(ngModel)]="phone_number"  name = "phone_number" type="number" class="input" placeholder="phone_number" />
+        
+        <input [(ngModel)]="password" name = "password" type="password" value="FakePSW"  class="input" placeholder="password" required />
+      </div>
+      <button type="submit" class="submit-btn" (click)="signup()">Signup</button>
+    </div>
+  </form>
+    
+  </div>
+  <!-- <app-root></app-root> -->
+
+
