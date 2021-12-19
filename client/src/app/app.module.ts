@@ -13,6 +13,7 @@ import { UpdateProfileComponent } from './update-profile/update-profile.componen
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { SignupComponent } from './signup/signup.component';
 import { AdminComponent } from './admin/admin.component';
+import { HomePageComponent } from './home-page/home-page.component';
 // import { AngularFireModule } from 'angularfire2';
 // import { AngularFireStorageModule } from 'angularfire2/storage';
 
@@ -27,6 +28,7 @@ import { AdminComponent } from './admin/admin.component';
     ToolsComponent,
     AdminComponent,
     ForgotPasswordComponent,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import { AdminComponent } from './admin/admin.component';
     HttpClientModule,
 
     RouterModule.forRoot([
-      { path: '', component: LoginComponent },
+      { path: 'home', component: HomePageComponent },
+      { path: 'home/login', component: LoginComponent },
       { path: 'user', component: UserProfileComponent },
       { path: 'user/update', component: UpdateProfileComponent },
       { path: 'users/signup', component: SignupComponent },
